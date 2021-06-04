@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+        <style>
+            * {
+                background-color: rgba(0, 0, 0, 0);
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+            p {
+                font-family: 'Shadows Into Light Two', cursive;
+                font-size: 9em;
+                text-align: center;
+                color: #a19091;
+                transform: skew(2deg, -3deg);
+
+                /* space for skew */
+                padding: .1em;
+            }
+        </style>
+        <script>
+            window.onload = () => {
+                const urlParams = new URLSearchParams(window.location.search);
+                let text = urlParams.get('text');
+                
+                document.getElementById('text').innerHTML = text;
+            }
+        </script>
+    </head>
+    <body>
+        <p id="text"></p>
+    </body>
+</html>

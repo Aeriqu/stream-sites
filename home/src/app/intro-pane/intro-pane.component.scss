@@ -1,0 +1,29 @@
+:host {
+    display: block;
+
+    min-height: 100vh;
+    width: 100%;
+}
+
+#logo {
+    object-fit: contain;
+    max-height: 8em;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    // align-items: flex-end;
+
+    position: relative;
+
+    text-align: center;
+}
+
+section {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 1em;
+    margin: 1em;
+
+    width: 35vmax;
+}

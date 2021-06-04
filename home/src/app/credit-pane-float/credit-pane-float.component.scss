@@ -1,0 +1,61 @@
+
+.outer-credit {
+    max-width: 100%;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 1em;
+    background-color: #1b1c1c;
+}
+
+.title {
+    display: flex; // hack to shrink down title card size
+}
+
+.inner-credit {
+    min-height: 100%;
+    padding: 1em;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+
+
+    img {
+        height: 10em;
+    }
+
+    .person-info {
+        display: inline-flex;
+        align-items: center;
+
+        margin-right: 3em;
+    
+        img {
+            // margin-bottom: 1em;
+            border-radius: 50%;
+        }
+    
+        .person {
+            padding-right: 2em;
+
+            img {
+                height: 11em;
+            }
+        }
+    
+        .links {
+            text-align: center;
+
+            a {
+                display: inline-flex;
+            }
+        }
+    }
+    
+    .credit-media {
+        margin: 2em;
+    }
+}
+
+
+

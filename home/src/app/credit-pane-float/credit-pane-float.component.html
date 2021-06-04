@@ -1,0 +1,51 @@
+<div *ngIf="checkAccess(data.person)" class="outer-credit">
+
+    <div class="title">
+        <mat-card>
+            <mat-card-title>
+                <h2>{{ data.title }}{{ data.titleB }}</h2>
+            </mat-card-title>
+        </mat-card>
+        <div></div> <!-- hack to shrink down title card size -->
+    </div>
+
+    <div class="inner-credit">
+
+        <div class="person-info">
+            <div class="person">
+                <img src="{{ data.icon }}" loading="lazy">
+                <!-- <mat-card> -->
+                    <h2>{{ data.person }}</h2>
+                <!-- </mat-card> -->
+            </div>
+    
+            <div class="links">
+                <h3>Links</h3>
+                
+                <p *ngIf="data.links.home">
+                    <a href="{{ data.links.home }}" rel="noopener noreferrer" target="_blank">
+                        <fa-icon [icon]="faHome"></fa-icon>&nbsp;Home
+                    </a>
+                </p>
+                <p *ngIf="data.links.twitch">
+                    <a href="{{ data.links.twitch }}" rel="noopener noreferrer" target="_blank">
+                        <fa-icon [icon]="faTwitch"></fa-icon>&nbsp;Twitch
+                    </a>
+                </p>
+                <p *ngIf="data.links.twitter">
+                    <a href="{{ data.links.twitter }}" rel="noopener noreferrer" target="_blank">
+                        <fa-icon [icon]="faTwitter"></fa-icon>&nbsp;Twitter
+                    </a>
+                </p>
+                <p *ngIf="data.links.instagram">
+                    <a href="{{ data.links.instagram }}" rel="noopener noreferrer" target="_blank">
+                        <fa-icon [icon]="faInstagram"></fa-icon>&nbsp;Instagram
+                    </a>
+                </p>
+            </div>
+        </div>
+        
+        <img *ngFor="let source of data.images" [src]="source" class="credit-media" loading="lazy">
+
+    </div>
+</div>

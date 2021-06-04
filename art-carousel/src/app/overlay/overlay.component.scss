@@ -1,0 +1,51 @@
+:host {
+    display: block;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    > * {
+        right: 0;
+    }
+}
+
+#chat {
+    height: 30vh;
+    width: 15vw;
+
+    background-color: rgba(10, 10, 10, .6);
+}
+
+#artist, #requester {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    height: 3.5vh;
+    max-width: 100vw;
+
+    p {
+        font-size: 2em;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}
+
+#chat, #artist, #requester {
+    float: right;
+    clear: right;
+    text-align: right;
+}
+
+#artist {
+    // width: 20vw;
+    min-width: 15vw;
+    background-color: rgba(143, 87, 189, 0.6);  
+}
+
+#requester {
+    // width: 25vw;
+    min-width: 15vw;
+    background-color: rgba(87, 148, 189, 0.6);  
+}
