@@ -1,24 +1,29 @@
-
 .outer-credit {
     max-width: 100%;
     padding: 1em;
     margin: 1em;
     border-radius: 1em;
     background-color: #1b1c1c;
-}
 
-.title {
-    display: flex; // hack to shrink down title card size
+    .name {
+        display: flex;
+
+        h2 {
+            font-size: 2em;
+            padding: .5em;
+    
+            border-radius: .2em;
+            background-color: #4c4c4c;
+        }
+    }
 }
 
 .inner-credit {
     min-height: 100%;
     padding: 1em;
-    display: inline-flex;
-    align-items: center;
-    text-align: center;
-    flex-wrap: wrap;
-
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
 
     img {
         height: 10em;
@@ -26,12 +31,12 @@
 
     .person-info {
         display: inline-flex;
+        flex-flow: row wrap;
+        flex: 1 1 auto;
         align-items: center;
-
         margin-right: 3em;
-    
+
         img {
-            // margin-bottom: 1em;
             border-radius: 50%;
         }
     
@@ -51,11 +56,17 @@
             }
         }
     }
-    
-    .credit-media {
-        margin: 2em;
+
+    .sections {
+        display: inline-flex;
+        flex-flow: column wrap;
+    }
+
+    @media only screen and (min-width: 768px) {
+        flex-wrap: nowrap;
+
+        .person-info {
+            flex: 0 0 auto;
+        }
     }
 }
-
-
-

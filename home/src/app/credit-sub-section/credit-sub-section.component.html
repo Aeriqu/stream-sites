@@ -1,0 +1,9 @@
+<h3>{{ section.name }}</h3>
+
+<div class="media">
+
+    <ng-container *ngIf="section.type === 'images'">
+        <img *ngFor="let source of section.assets" [src]="source" class="credit-media" loading="lazy">
+    </ng-container>
+    
+</div>

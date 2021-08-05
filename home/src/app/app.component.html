@@ -1,19 +1,11 @@
+<app-intro-pane></app-intro-pane>
 
-<ng-container *ngIf="checkBeforeUnlockDate() && !checkCreditPreviewUnlock()">
-    <app-countdown [debutDate]="debutDate" [unlockDate]="unlockDate" [(currentDate)]="currentDate" [(creditPreview)]="creditPreview"></app-countdown>
-</ng-container>
+<app-profile-pane id="profile"></app-profile-pane>
 
-<ng-container *ngIf="!checkBeforeUnlockDate() || checkCreditPreviewUnlock()">
-    <app-intro-pane *ngIf="checkAccess('')"></app-intro-pane>
+<div id="credits">
+    <app-subtitle-pane text="Credits"></app-subtitle-pane>
 
-    <app-profile-pane *ngIf="checkAccess('')" id="profile"></app-profile-pane>
-
-    <div id="credits">
-        <app-subtitle-pane text="Credits"></app-subtitle-pane>
-
-        <app-credit-pane-float *ngFor="let credit of credits | keyvalue" [data]="credit.value"></app-credit-pane-float>
-    </div>
-</ng-container>
-
+    <app-credit-pane-float *ngFor="let credit of credits | keyvalue" [data]="credit.value"></app-credit-pane-float>
+</div>
 
 <router-outlet></router-outlet>

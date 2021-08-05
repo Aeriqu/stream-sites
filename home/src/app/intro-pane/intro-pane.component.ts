@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faDiscord, faTwitter, faTwitch } from '@fortawesome/free-brands-svg-icons';
+import { faDiscord, faTwitter, faTwitch, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faPaintBrush, faUserCircle, faQuestion } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -12,6 +12,7 @@ export class IntroPaneComponent implements OnInit {
   faDiscord = faDiscord;
   faTwitter = faTwitter;
   faTwitch = faTwitch;
+  faYoutube = faYoutube;
   faPaintBrush = faPaintBrush;
   faUserCircle = faUserCircle;
   faQuestion = faQuestion;

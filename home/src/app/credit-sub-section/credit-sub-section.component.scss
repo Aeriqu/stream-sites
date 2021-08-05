@@ -1,0 +1,17 @@
+h3 {
+    font-size: 2em;
+}
+
+.media {
+    display: flex;
+    flex-wrap: wrap;
+
+    img {
+        height: 10em;
+    }
+
+    .credit-media {
+        margin: 2em;
+    }
+}
+
