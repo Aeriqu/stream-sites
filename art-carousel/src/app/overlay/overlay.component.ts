@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { faTwitch, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-overlay',
@@ -8,6 +9,9 @@ import { Component, Input, OnInit } from '@angular/core';
 export class OverlayComponent implements OnInit {
 
   @Input() artData!: any;
+
+  faTwitch = faTwitch;
+  faTwitter = faTwitter;
 
   constructor() { }
 

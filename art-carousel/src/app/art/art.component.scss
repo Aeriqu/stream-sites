@@ -1,9 +1,7 @@
 :host {
     display: block;
     overflow: hidden;
-
-    height: 95vh;
-    min-width: 100%;
+    padding-left: 1em;
 }
 
 #main {
@@ -11,26 +9,6 @@
 
     object-fit: contain;
     height: 100%;
-    // width: 100%;
 
     margin: auto;
-}
-
-#backfiller {
-    position: absolute;
-
-    // funky centering
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    object-fit: cover;
-    
-    // force things that are smaller to fit
-    min-height: 100%;
-    min-width: 100%;
-
-    z-index: -1;
-
-    filter: blur(2em) brightness(50%);
 }

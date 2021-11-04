@@ -1,9 +1,23 @@
-<div id="chat"></div>
-
 <div id="artist">
-    <p *ngIf="artData.artist">Artist: {{ artData.artist }}</p>
+    <p *ngIf="artData.artist">Artist: {{ artData.artist }}&nbsp;</p>
+    <p class=social>
+        <span *ngIf="artData.artistTwitter" class="social">
+            <fa-icon [icon]="faTwitter"></fa-icon>&nbsp;{{ artData.artistTwitter }}
+        </span>
+        <span *ngIf="artData.artistTwitch" class="social">
+            <fa-icon [icon]="faTwitch"></fa-icon>&nbsp;{{ artData.artistTwitch }}
+        </span>
+    </p>
 </div>
 
 <div id="requester">
-    <p *ngIf="artData.requester">Requester: {{ artData.requester }}</p>
+    <p *ngIf="artData.requester">Requester: {{ artData.requester }}&nbsp;</p>
+    <p class="social">
+        <span *ngIf="artData.requesterTwitter" class="social">
+            <fa-icon [icon]="faTwitter"></fa-icon>&nbsp;{{ artData.requesterTwitter }}
+        </span>
+        <span *ngIf="artData.requesterTwitch" class="social">
+            <fa-icon [icon]="faTwitch"></fa-icon>&nbsp;{{ artData.requesterTwitch }}
+        </span>
+    </p>
 </div>

@@ -12,7 +12,7 @@ Assets have been removed.
 
 * art-carousel: Angular 11 app to rotate art for an end screen
 
-* home: Angular 11 home page. Live at u.aeriq.im. Also contains odd pre-debut code to hide the site / grant secret access.
+* home: Angular 12 home page. Live at u.aeriq.im.
 
 * obs-css: Random css files for use in OBS
 

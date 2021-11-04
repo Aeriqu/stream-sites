@@ -2,14 +2,15 @@
     display: block;
     z-index: 99;
 
-    height: 5vh;
     width: 100%;
-
-    background-color: #28232e;
+    padding-bottom: 1vh;
 }
 
 div {
     text-align: center;
     vertical-align: middle;
-    line-height: 5vh;
+
+    p {
+        font-size: 5vh;
+    }
 }

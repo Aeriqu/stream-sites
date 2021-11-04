@@ -7,6 +7,7 @@ import { OverlayComponent } from './overlay/overlay.component';
 import { ArtComponent } from './art/art.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ArtService } from './art-service.service';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ArtService } from './art-service.service';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    FontAwesomeModule
   ],
   providers: [ArtService],
   bootstrap: [AppComponent]
